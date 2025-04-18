@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+        <title>Joachim Bono</title>
+
+        <meta name="description" content="Description">
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+
+    <body>
+        <canvas id="bg"></canvas>
+        <!-- ***** HEADER ***** -->
+        <header class="header" role="banner" id="top">
+            <div class="row">
+            <nav class="nav" role="navigation">
+                <ul class="nav__items">
+                <li class="nav__item"><a href="#project" class="nav__link">Projects</a></li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+                </ul>
+            </nav>
+            </div>
+            <div class="header__text-box row">
+                <div class="header__text">
+                    <h1 class="heading-primary">
+                        <span>Hey, I'm Joachim ;)</span>
+                    </h1>
+                    <p>I build stuff that works. Well, mostly.</p>
+                    <!-- <a href="#contact" class="btn btn--accent">Contact</a> -->
+                </div>
+            </div>
+            <div class="scroll-indicator">
+              <span class="scroll-arrow"></span>
+            </div>
+        </header>
+
+        <main role="main">
+            <!-- ***** PROJECTS ***** -->
+            <section class="project" id="project">
+                <div class="row">
+                    <h2>Projects</h2>
+                    <div class="project__boxes">
+                        <div class="project__box">
+                            <div class="project__image-box">
+                            <img src="./assets/images/noesis.png" class="project__image" alt="Noesis Project" />
+                            </div>
+                            <div class="project__content">
+                                <div class="project__header">
+                                    <h3>Noesis</h3>
+                                    <a href="https://www.github.com/mihcaoj/noesis" title="View Source Code" target="_blank" class="project__github">
+                                        <img src="./assets/images/github.svg" class="project__code" alt="GitHub">
+                                    </a>
+                                </div>
+                                <p>
+                                    A full-stack tutoring platform built with Django, React, and PostgreSQL.
+                                </p>
+
+                                <p>
+                                    A crossroads project between my major in computer science and my minor in pedagogy, developed during my Bachelor's Thesis with the Software Engineering group of the University of Fribourg.
+                                </p>
+
+                                <p>
+                                    Implemented a headless architecture with Django REST Framework as the API backend and React for a responsive frontend.
+                                </p>
+
+                                <p>
+                                    Key features include search functionality, topic filtering, tutor cards, user profiles, notifications, session management, a messaging interface, and more fancy stuff.
+                                </p>
+
+                                <p>
+                                    The platform was containerized with Docker for consistent deployment and includes a database seeding script for testing and demonstration purposes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="project__box">
+                            <div class="project__image-box">
+                            <img src="./assets/images/cognitus.png" class="project__image" alt="CognitUs Project" />
+                            </div>
+                            <div class="project__content">
+                                <div class="project__header">
+                                    <h3>CognitUs</h3>
+                                    <a href="https://www.github.com/mihcaoj/cognitus" title="View Source Code" target="_blank" class="project__github">
+                                        <img src="./assets/images/github.svg" class="project__code" alt="GitHub">
+                                    </a>
+                                </div>
+                                <p>
+                                    A real-time collaborative text editor built with Phoenix.
+                                </p>
+                                <p>
+                                    Developed in collaboration with a classmate for the final project of our Concurrent & Distributed Systems course.
+                                </p>
+                                <p>
+                                    It uses Conflict-Free Replicated Data Types (CRDT) for conflict resolution in order to ensure multiple users can edit a text document simultaneously without wreaking havoc.
+                                </p>
+                                <p>
+                                    Key features include live user tracking, caret positioning, and also persistent document state across sessions.
+                                </p>
+                                <p>
+                                    The platform was containerized with Docker for easy deployment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ***** ABOUT ***** -->
+            <section class="about" id="about">
+            <div class="row">
+                <h2>About</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about">
+                            Hello World! I'm Joachim, a soon-to-be Computer Science graduate and technology enthusiast.
+                            I'm particularly interested in Software Engineering and Cybersecurity and am looking forward to turning these skills into my first professional role.
+                            When I'm not banging my head on the wall because my code doesn't work, I'm probably reading sci-fi, playing bass, or spending time outdoors touching grass.
+                        </p>
+                                <!-- SKILLS -->
+                                <h3 class="about__subtitle"><strong>Skills</strong></h3>
+                                <div class="skills">
+                                  <div class="skills__category">
+                                        <ul class="skills__list">
+                                            <li><strong>Languages:</strong> Java, Python, JavaScript, Elixir</li>
+                                            <li><strong>Frameworks/Libraries:</strong> Django, React, Phoenix, NumPy, Pandas</li>
+                                            <li><strong>Tools:</strong> Git, Docker, VSCode, LaTeX, MS Office Suite</li>
+                                            <li><strong>Currently Learning:</strong> TypeScript, Go</li>
+                                            <li><strong>Soft Skills:</strong> Communication, Collaboration, Problem-Solving, Adaptability</li>
+                                        </ul>
+                                  </div>
+                                </div>
+
+                                <!-- EDUCATION -->
+                                <h3 class="about__subtitle"><strong>Education</strong></h3>
+                                <div class="education">
+                                  <div class="education__item">
+                                    <h4><strong>BSc Computer Science</strong></h4>
+                                    <p class="education__details">University of Fribourg • 2022 - 2025</p>
+                                    <p class="education__description">Minor in Pedagogy/Psychology.</p>
+                                  </div>
+                                </div>
+
+                                <div class="education">
+                                  <div class="education__item">
+                                    <h4><strong>BSc Psychology</strong></h4>
+                                    <p class="education__details">University of Fribourg • 2020 - 2022</p>
+                                    <p class="education__description">Re-oriented after four complete semesters.</p>
+                                  </div>
+                                </div>
+
+                                <div class="education">
+                                  <div class="education__item">
+                                    <h4><strong>Dubs Bridging Program</strong></h4>
+                                    <p class="education__details">École Prévôtoise, Moutier • 2018-2019</p>
+                                    <p class="education__description">Transition program from Specialized Baccalaureate (Maturité Spécialisée) to Universities.</p>
+                                  </div>
+                                </div>
+
+                                <div class="education">
+                                  <div class="education__item">
+                                    <h4><strong>Specialized Baccalaureate in Social Work</strong></h4>
+                                    <p class="education__details">Signol’Air, La Neuveville • 2017-2018</p>
+                                    <p class="education__description">Supervised children in an all-day school setting, organized engaging activities, and communicated regular feedback to parents.</p>
+                                  </div>
+                                </div>
+
+                                <!-- INTERNSHIPS -->
+                                <h3 class="about__subtitle"><strong>Internships</strong></h3>
+                                <div class="education">
+                                  <div class="education__item">
+                                    <h4><strong>ABCCD Research Group, University of Fribourg</strong></h4>
+                                    <p class="education__details">Collaborated on designing co-speech gesture assessment tasks, utilized R for data analysis, recorded multimedia stimuli, and implemented multilingual experimental tasks with test runs.</p>
+                                  </div>
+                                </div>
+
+                                <!-- CERTIFICATIONS -->
+                                <h3 class="about__subtitle"><strong>Certifications</strong></h3>
+                                <div class="education">
+                                  <div class="education__item">
+                                    <h4><strong>CS50: Introduction to Cybersecurity (HarvardX)</strong> • 2024</h4>
+                                    <p class="education__details">Completed five lectures, each with a practical assignment covering key cybersecurity topics, and culminating in a final project.</p>
+                                  </div>
+                                </div>
+
+                                <div class="education">
+                                  <div class="education__item">
+                                    <h4><strong>Cambridge Advanced Exam (C1)</strong> • 2019</h4>
+                                    <p class="education__details">Awarded a distinction – demonstrated proficiency at CEFR Level C2.</p>
+                                  </div>
+                                  </div>
+
+                        <a href="assets/cv/joachim_bono_cv.pdf" class="btn">Take a look at my CV</a>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </main>
+
+        <!-- ***** CONTACT ***** -->
+        <section class="contact" id="contact">
+            <div class="row">
+                <h2>Contact</h2>
+                <div class="contact-section">
+                    <h3 class="contact-label">Get in touch <span class="click-to-copy">(Click to copy)</span></h3>
+                    <div class="email-container">
+                        <p class="email-address" id="email">joachim.bono@protonmail.com</p>
+                        <p class="email-copied" id="emailCopied">Email Copied!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ***** FOOTER ***** -->
+        <footer role="contentinfo" class="footer">
+            <div class="row">
+            <ul class="footer__social-links">
+                <li class="footer__social-link-item">
+                <a href="https://github.com/mihcaoj" title="GitHub Profile">
+                    <img src="./assets/images/github.svg" class="footer__social-image" alt="Github">
+                </a>
+                </li>
+                <li class="footer__social-link-item">
+                <a href="https://linkedin.com/in/joachimbono" title="LinkedIn Profile">
+                    <img src="./assets/images/linkedin.svg" class="footer__social-image" alt="Linkedin">
+                </a>
+                </li>
+            </ul>
+            <p class="foot">&copy; 2025 mihcaoj</p>
+        </footer>
+
+        <a href="#top" class="back-to-top" title="Back to Top">
+            <img src="./assets/images/arrow-up.png" alt="Back to Top" class="back-to-top__image"/>
+        </a>
+        <script type="module" src="./src/main.js"></script>
+    </body>
+</html>
