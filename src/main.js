@@ -106,16 +106,15 @@ function addStar() {
 Array(250).fill().forEach(addStar);
 
 /********** MOON **********/
-const moonTexture = new THREE.TextureLoader().load(
-  "/assets/images/moon_map.jpg",
-);
+import moonMapUrl from "../assets/images/moon_map.jpg";
+import moonTextureUrl from "../assets/images/moon_texture.jpg";
+
+const moonTexture = new THREE.TextureLoader().load(moonMapUrl);
 moonTexture.generateMipmaps = true;
 moonTexture.minFilter = THREE.LinearMipmapLinearFilter;
 moonTexture.anisotropy = renderer.capabilities.getMaxAnisotropy();
 
-const normalTexture = new THREE.TextureLoader().load(
-  "/assets/images/moon_texture.jpg",
-);
+const normalTexture = new THREE.TextureLoader().load(moonTextureUrl);
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(10, 64, 64),
