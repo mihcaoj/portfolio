@@ -63,7 +63,7 @@ body {
     font-size: var(--font-size-regular);
     font-family: var(--font-stack);
     font-weight: 400;
-    color: var(--off-white);
+    color: var(--white);
     line-height: var(--line-height-normal);
     overflow-x: hidden;
     position: relative;
@@ -93,7 +93,7 @@ body {
 }
 
 section {
-    padding: var(--gutter-medium) 0;
+    padding: var(--gutter-medium) 0 var(--gutter-small) 0;
     position: relative;
     z-index: 1;
 }
@@ -547,17 +547,12 @@ a:focus {
 
 .project {
     padding-top: var(--gutter-huge);
-    padding-bottom: var(--gutter-huge);
 }
 
 .project__box {
     display: flex;
     flex-direction: column;
     margin-bottom: var(--gutter-medium);
-}
-
-.project__box:not(:last-child) {
-    margin-bottom: 15rem;
 }
 
 @media (max-width: 500px) {
@@ -589,7 +584,7 @@ a:focus {
 .project__header {
     display: flex;
     align-items: center;
-    margin-bottom: var(--gutter-regular);
+    margin-bottom: var(--gutter-small);
 }
 
 .project__header h3 {

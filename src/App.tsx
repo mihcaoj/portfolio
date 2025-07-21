@@ -15,10 +15,10 @@ function App() {
         </div> */}
         <div style={{ width: '100vw', height: '100vh', position: 'fixed', top: 0, left: 0, zIndex: -1 }}>
           <Beams
-            beamWidth={3}
+            beamWidth={4}
             beamHeight={15}
             beamNumber={12}
-            lightColor="#ffffff"
+            lightColor="#1d84f9"
             speed={2}
             noiseIntensity={1.75}
             scale={0.2}
@@ -28,10 +28,10 @@ function App() {
         <div className="header__text-box row">
           <TextPressure
             text="Hello!"
-            flex={true}
+            flex={false}
             alpha={false}
             stroke={false}
-            width={true}
+            width={false}
             weight={true}
             italic={true}
             textColor="#ffffff"
@@ -40,10 +40,10 @@ function App() {
           />
           <TextPressure
             text="I'm Joachim"
-            flex={true}
+            flex={false}
             alpha={false}
             stroke={false}
-            width={true}
+            width={false}
             weight={true}
             italic={true}
             textColor="#ffffff"
@@ -55,7 +55,7 @@ function App() {
             flex={true}
             alpha={false}
             stroke={false}
-            width={true}
+            width={false}
             weight={true}
             italic={true}
             textColor="#ffffff"
@@ -67,7 +67,7 @@ function App() {
             flex={true}
             alpha={false}
             stroke={false}
-            width={true}
+            width={false}
             weight={true}
             italic={true}
             textColor="#ffffff"
