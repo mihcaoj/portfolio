@@ -10,9 +10,6 @@ function App() {
   return (
     <>
       <header className="header" role="banner" id="top">
-        {/* <div style={{ width: '100vw', height: '100vh', position: 'fixed', top: 0, left: 0, zIndex: -1 }}>
-          <LiquidChrome baseColor={[0.1, 0.1, 0.1]} speed={0.05} amplitude={0.1} interactive={false} />
-        </div> */}
         <div style={{ width: '100vw', height: '100vh', position: 'fixed', top: 0, left: 0, zIndex: -1 }}>
           <Beams
             beamWidth={4}
@@ -25,6 +22,7 @@ function App() {
             rotation={30}
           />
         </div>
+        <div></div>
         <div className="header__text-box row">
           <TextPressure
             text="Hello!"

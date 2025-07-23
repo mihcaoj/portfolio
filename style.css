@@ -51,6 +51,8 @@ html {
     font-size: 62.5%; /* 62.5% -> 1rem = 10px */
     box-sizing: border-box;
     scroll-behavior: smooth;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 @media (max-width: 1000px) {
@@ -294,73 +296,6 @@ a:focus {
     font-family: sans-serif;
 }
 
-/*************************************/
-/********** GLOW ANIMATION **********/
-/***********************************/
-
-@keyframes textGlow {
-    0% {
-        text-shadow: none;
-    }
-    10% {
-        text-shadow:
-            0 0 1px var(--color-accent),
-            0 0 2px var(--color-accent),
-            0 0 4px var(--color-accent);
-    }
-    20% {
-        text-shadow:
-            0 0 2px var(--color-accent),
-            0 0 4px var(--color-accent),
-            0 0 6px var(--color-accent);
-    }
-    30% {
-        text-shadow:
-            0 0 3px var(--color-accent),
-            0 0 6px var(--color-accent),
-            0 0 9px var(--color-accent);
-    }
-    40% {
-        text-shadow:
-            0 0 4px var(--color-accent),
-            0 0 8px var(--color-accent),
-            0 0 12px var(--color-accent);
-    }
-    50% {
-        text-shadow:
-            0 0 4px var(--color-accent),
-            0 0 8px var(--color-accent),
-            0 0 12px var(--color-accent);
-    }
-    60% {
-        text-shadow:
-            0 0 4px var(--color-accent),
-            0 0 8px var(--color-accent),
-            0 0 12px var(--color-accent);
-    }
-    70% {
-        text-shadow:
-            0 0 3px var(--color-accent),
-            0 0 6px var(--color-accent),
-            0 0 9px var(--color-accent);
-    }
-    80% {
-        text-shadow:
-            0 0 2px var(--color-accent),
-            0 0 4px var(--color-accent),
-            0 0 6px var(--color-accent);
-    }
-    90% {
-        text-shadow:
-            0 0 1px var(--color-accent),
-            0 0 2px var(--color-accent),
-            0 0 4px var(--color-accent);
-    }
-    100% {
-        text-shadow: none;
-    }
-}
-
 /**********************************/
 /********** BACK TO TOP **********/
 /********************************/
@@ -522,6 +457,10 @@ a:focus {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.header__text-box {
+    padding-top: 80px;
 }
 
 .header__text p {
